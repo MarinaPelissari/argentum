@@ -24,4 +24,8 @@ public final class Negociacao {
     public LocalDateTime data() {
         return this.data;
     }
+
+    public double volume() {
+        return this.preco * this.quantidade;
+    }
 }
