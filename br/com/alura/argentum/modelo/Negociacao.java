@@ -26,6 +26,6 @@ public final class Negociacao {
     }
 
     public double volume() {
-        return this.preco * this.quantidade;
+        return preco * quantidade;
     }
 }
