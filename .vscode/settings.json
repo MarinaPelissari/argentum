@@ -1,0 +1,7 @@
+{
+    "java.project.referencedLibraries": [
+        "lib/**/*.jar",
+        "/Users/mpelissari/Downloads/junit-4.13.jar",
+        "/Users/mpelissari/Downloads/junit-platform-console-standalone-1.6.2.jar"
+    ]
+}
