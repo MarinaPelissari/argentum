@@ -8,6 +8,16 @@ public final class Negociacao {
     private final LocalDateTime data;
 
     public Negociacao(double preco, int quantidade, LocalDateTime data) {
+        if(preco <= 0) {
+            throw new IllegalArgumentException("O preço não pode ser zero ou negativo!");
+        }
+        if(quantidade <= 0) {
+            throw new IllegalArgumentException("A quantidade não pode ser zero ou negativa!");
+        }
+        if(data == null) {
+            throw new IllegalArgumentException("A data não pode ser nula!");
+        }
+
         this.preco = preco;
         this.quantidade = quantidade;
         this.data = data;
